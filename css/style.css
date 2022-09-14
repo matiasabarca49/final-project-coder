@@ -328,7 +328,7 @@ img.icon{
 
 .gridContainerMain{
     display: grid;
-    grid-template-rows: 70px 60vh 1fr 200px;
+    grid-template-rows: 70px auto auto auto;
     gap: 0;
 }
 
