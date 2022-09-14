@@ -1,0 +1,741 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: #F5F5F5;
+    /* font-family: sans-serif; */
+    font-family: 'Secular One', sans-serif;
+}
+
+/*Menu de navegación y logo*/
+
+
+#Header{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: #405163;
+    height: 70px;
+    width: 100%;
+    z-index: 999;
+    justify-content: space-between;
+}
+
+
+#Header .Header__logo{
+    font-family: 'Inspiration', cursive;
+    font-size: 50px;
+    color: #fff;
+    padding: 0 20px;
+    text-shadow: 2px 2px 2px #000;
+    
+}
+
+#Header .Header__logo a{
+    text-decoration: none;
+}
+
+#Header .Header__logo a:visited{
+    color: #fff;
+}
+
+#Header .Header__menu{
+    margin: 20px 20px;
+    margin-right: 30px;
+}
+
+
+#Header .Header__menu li{
+    display: inline-block;
+    list-style: none;
+    font-size: 20px;
+    margin-right:30px;
+}
+
+#Header .Header__menu a{
+    text-decoration: none;
+    color:white ;
+}
+
+#Header .Header__nav .Header__responsive{
+    display: none;
+    visibility: hidden;
+}
+
+.Header__nav input, .Header__nav img{
+    display: none;
+    visibility: hidden;
+}
+
+/*=======================================*/
+
+/* Imagen principal con eslogan*/
+
+
+.accessDirect{
+    display: flex;
+    justify-content: flex-start;
+    background-image: url(../pictures/stollen-prueba4.png);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 95vh;
+}
+
+.accessDirect__eslogan{
+     margin: 5% 5%;
+}
+
+.accessDirect h1{
+    font-family: 'Secular One', sans-serif;
+    font-size:3vw;
+    color: #fff; 
+}
+.accessDirect h1 span{
+    display: block;
+    font-size: 4vw;
+}
+
+.accessDirect__botones{
+    margin-top:20px ;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.accessDirect__botones li {
+    list-style-type: none;
+}
+
+
+.accessDirect  .accessDirect__botones a{
+    color: #fff;
+    text-decoration: none;
+    background-color: #405163;
+    font-size: 21px;
+    border-radius: 70px;
+    padding: 20px;
+    font-weight: 800;
+    box-shadow: 2px 2px 5px black;
+}
+
+.accessDirect a img{
+    filter: invert(100%);
+}
+
+.backAnotherWhite{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: #F5F5F5;
+    padding: 30px;
+}
+
+.promociones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    border: 2px solid black;
+    background-color: #F5F5F5;
+}
+.promociones p{
+    font-size: 50px;
+    border: 2px solid black;
+}
+
+.delivery{
+    display: flex;
+    justify-content: space-around;
+    text-align: center; 
+    background-color: #F5F5F5;
+    gap: 50px;
+    margin: 50px;
+}
+.delivery div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.delivery div div{
+    background-color: #405163;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+}
+
+.invert{
+    filter: invert(100%);
+}
+.delivery img{
+    width: 80px;
+    border-radius: 100%;
+}
+
+.backAnotherGreen{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    background-color: #405163;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 2px 5px 5px black;
+    color: #fff;  
+    padding: 30px;
+}
+
+.backAnotherGreen h3, .backAnotherWhite h3{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 900;
+    margin-bottom:40px;
+    
+}
+
+.backAnotherGreen div , .backAnotherWhite div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 30px;
+    text-align: center;
+} 
+
+.backAnotherGreen p, .backAnotherWhite p{
+    font-size: 21px;     
+}
+
+.backAnotherGreen img, .backAnotherWhite img{
+    position: relative;
+    width: 400px;
+}
+
+.locales{
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    height: 80px;
+}
+
+img.icon{
+    position: relative;
+    top: 14px;
+    margin-left: 20px ;
+    width: 40px;
+    height: 40px;
+    box-shadow: none;
+}
+
+/* ---------------------------------------- */
+/*==========================Página Productos=================================*/
+
+/* Fondo background */
+
+.box{
+    background-image: linear-gradient(rgba(5, 7, 12,0.87),rgba(5, 7, 12, 0.87)),
+	url(../pictures/Logo2.png);
+    background-repeat:repeat;
+    background-size: 900px;
+}
+
+/* ----------------------------------------- */
+
+/* Menu de productos */
+.submenu{
+    /* background-color: #405163; */
+    display: inline-block;
+    position: fixed;
+    top:167px;
+    left: 0;
+    color: white;
+    padding: 30px 5px;  
+    
+}
+
+.submenu li{
+    margin: 10px 0;
+    padding: 20px 50px;
+    background-color: #e9f4f6;
+    border-radius: 40px;
+    text-align: center;
+    list-style-type: none;
+}
+.submenu li a{
+    color: #000;
+    text-decoration: none;
+}
+
+/* ---------------------------------------- */
+
+/* Contenido Página productos */
+
+#main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-left: 25%;
+    gap: 30px;
+    color: #fff;
+}
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #fff;
+    width: 70vw;
+}
+
+.productos div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 300px;
+    overflow: hidden;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 2px 2px 50px black;
+}
+
+
+.productos div h3{
+    font-size: 40px;
+    text-shadow: 0 0 10px black;
+}
+
+.productos div img{
+    /* object-fit: cover; */
+    width: 50vw;
+    
+}
+
+
+.productosTitulo{
+    font-size: 60px;
+}
+
+/*==================================================================*/
+
+/*==========================Página Promociones=================================*/
+
+.combos{
+    margin: 0 auto;
+    padding: 30px 0;
+    text-align: center;
+
+}
+
+.combos h2{
+    color: #fff;
+    font-size: 40pt;
+    margin: 30px 0;
+    font-family: 'Secular One', sans-serif;
+}
+
+.combos .combos__contenedor{
+    background-color: #F5F5F5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; 
+}
+
+.combos .combos__contenedor div{
+    margin: 20px 0;
+    width: 400px;
+    height: 25%;
+    overflow: hidden;
+}
+
+.combos .combos__contenedor h3{
+    font-size: 21pt;
+
+}
+
+.combos .combos__contenedor p{
+    /* font-size: 21pt; */
+    margin: 10px;
+
+}
+.combos .combos__contenedor img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    /* margin: 10px 0; */
+}
+
+/*==================================================================*/
+
+/*==========================Página Sucursales=================================*/
+
+.titulo{
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+    font-size: 50px;
+}
+.ubicacion{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F5F5F5;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    padding: 20px 0;
+
+}
+
+.ubicacion__informacion h3{
+    font-size: 30pt;
+    
+}
+
+
+.ubicacion--derecha{
+  flex-direction: row-reverse;
+
+}
+
+.ubicacion__informacion h3{
+    margin: 20px 0;
+}
+
+
+.ubicacion__imagen img{
+    width: 500px;
+}
+
+/*==================================================================*/
+
+/*==========================Página Contacto=================================*/
+
+.formulario{
+   
+    background-color: #F5F5F5;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    width: 80vw;
+    padding: 50px;
+    border-radius:40px;
+    margin: 0 auto;
+    margin-bottom: 20px; 
+    box-shadow: 0 0 15px #000;
+}
+
+.formulario  .formulario__imagen{
+
+    background-color: #405163;
+    border: 2px solid black;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    font-family: 'Inspiration', cursive;
+    font-size: 100pt;
+    padding: 30px;
+    margin: 50px;
+}
+.formulario__imagen p{
+    position: relative;
+    right: 100px;
+}
+
+.formulario__datos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario__inputs{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.formulario__datos div input{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.formulario__datos textarea{
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+    resize: none;
+}
+.formulario__inputs input:hover{
+    border:2px solid #405163;
+    box-shadow: 0 0 10px #405163;
+
+}
+.formulario__inputs input:focus{
+    border:2px solid #405163;
+    box-shadow: 0 0 10px #405163;
+    outline: none;
+
+}
+
+.formulario__datos input[type="checkbox"]{
+    width: 20px;
+}
+
+.formulario__inputs input[type="submit"], .formulario__inputs input[type="reset"]{
+    background-color: #405163;
+}
+
+/*==================================================================*/
+
+
+
+.gridContainer{ 
+    display: grid;
+    height: 200px;
+    border-top: 2px solid #F5F5F5;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#footer{
+    background-color: #405163;
+    color: #fff;
+}
+
+#footer .autor{
+   grid-row: 2/3;
+   grid-column: 2/3;
+   align-self: flex-end;
+   border: 2px double #fff;
+    
+}
+
+#footer .autor p{
+    padding: 20px;
+}
+
+#footer .logoFooter{
+    grid-row: 1/2;
+    grid-column: 3/4;
+    font-family: 'Inspiration', cursive;
+    font-size: 100px;
+    color: #fff;
+    padding: 0 20px;
+    text-shadow: 2px 2px 2px #000;
+
+}
+
+#footer .redes{
+    display: flex;
+    gap: 15px;
+    margin-left: 120px;
+    margin-top: 10px;
+}
+
+#footer .redes li{
+    list-style: none;
+}
+
+
+@media screen and (max-width: 850px){
+
+    /*=======================Página Inicio=========================*/
+
+
+    .Header__nav{
+        display: flex;
+        position: relative;
+        flex-direction: row-reverse;
+        align-items: center;
+        z-index: 999;
+    }
+
+    .Header__nav img{
+        display: block;
+        visibility: visible;
+        width: 40px;
+        margin-right: 20px;
+        z-index: 1;
+        filter: invert(100%);
+    }
+
+    .Header__nav input[type="checkbox"]{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        z-index: 999;
+        margin-right:20px ;
+        opacity: 0;
+    }
+
+    .Header__menu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        text-align: center;
+        top: -1000px;
+        width: 30vw;
+        background-color: #405163;
+        transition: 0.5s;
+        z-index: 1;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #405163;
+    }
+
+    .Header__menu li{
+        padding: 10px;
+        margin: 10px 0;
+        width: 100%;   
+    }
+
+    .Header__menu li:hover{
+        background-color: #F5F5F5;
+    }
+
+    #Header .Header__nav .Header__menu li:hover a{
+        color: #405163;
+    }
+
+
+    .Header__nav input:checked + .Header__menu{
+        top: 55px;
+        transition: 0.5s;
+    }
+
+
+    .accessDirect{
+       background-image: linear-gradient(rgba(5, 7, 12,0.70),rgba(5, 7, 12, 0.70)),
+       url(../pictures/screen-850-prueba2.jpg);;
+        background-size: cover; 
+    }
+
+    .accessDirect h1{
+        font-family: 'Secular One', sans-serif;
+        font-size:55px;
+        color: #fff; 
+    }
+    .accessDirect h1 span{
+        display: block;
+        font-size: 60px;
+    }
+
+    .delivery{
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+    }
+
+
+    .rotateArrow {
+        transform: rotate(90deg);
+    }
+
+    .backAnotherGreen div , .backAnotherWhite div{
+        text-align: justify;
+        width: 100%;
+        padding: 30px 0;
+    } 
+
+    .backAnotherGreen h3 , .backAnotherWhite{
+        font-size: 35px;
+    }
+
+/*========================================================================*/
+
+/*=======================Página productos=========*/
+#main{
+    margin-left: 0;
+}
+
+.productos{
+    width: 100%;
+    
+}
+
+.productos div h3{
+    position: absolute;
+}
+
+.productos div img{
+    width: 100%;
+    height: 100%;
+}
+
+/*================================================================*/
+.ubicacion{
+    padding: 0;
+}
+
+.ubicacion__imagen img{
+    width: 100%;
+}
+/*===================Página Sucursales=============================*/
+
+/*================================================================*/
+
+/*===================Página Contacto=============================*/
+
+.formulario{
+    width: 100vw;
+
+}
+
+/*====================================================================================*/
+
+
+
+}
+@media screen and (max-width:750px){
+    .gridContainer{
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 300px;
+    }
+ 
+    #footer .logoFooter{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #footer .autor{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        
+    }
+
+    .gridContainer div:first-child{
+        justify-self: flex-start;
+    }
+
+    
+}
+
+@media screen and (max-width: 480px) {
+
+   #Header .Header__menu{
+        width: 100vw;
+        margin: 0;
+        margin-right: 0;
+    }
+    .accessDirect{
+        background-image: linear-gradient(rgba(5, 7, 12,0.70),rgba(5, 7, 12, 0.70)),
+        url(../pictures/screen-850-prueba3.jpg);;
+         background-size: cover; 
+     } 
+
+}
+
+/*==================================================================*/
