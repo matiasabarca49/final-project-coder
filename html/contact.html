@@ -7,6 +7,8 @@
     <link rel="icon" type="image/x-icon" href="../pictures/Logo2.ico">
     <link href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Contacto</title>
 </head>
@@ -30,61 +32,62 @@
         </header>
         <main>
             <h1 class="titulo">Contáctanos</h1>
-            <form class="formulario" action="">
-                <div class="formulario__datos">
-                    <div class="formulario__inputs">
-                        <label for="nombre">Nombre: </label>
-                        <input type="text" id="nombre" placeholder="Escriba su nombre" required>
+            <div class="d-flex flex-row justify-content-evenly formulario ">
+                <form>
+                    <div class="row mb-3">
+                        <div class="col-xs-12 col-sm-12 col-md-6 mb-3">
+                            <label for="nombre" class="form-label">Nombre:</label> 
+                            <input id="nombre" type="text" class="form-control " placeholder="Ingrese su Nombre" aria-label="Ingrese su Nombre">
+                        </div>
+                        <div class="col col-md-6">
+                            <label for="apellido" class="form-label">Apellido:</label> 
+                            <input id="apellido" type="text" class="form-control" placeholder="Ingrese su Apellido" aria-label="Ingrese su Apellido">
+                        </div>
                     </div>
-                    <div class="formulario__inputs">
-                        <label for="apellido">Apellido: </label>
-                        <input type="text" name="" id="apellido" placeholder="Escriba su apellido">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingrese su Email">
                     </div>
-                    <div class="formulario__inputs">
-                        <label for="mail">Email: </label>
-                        <input type="email" id="mail" placeholder="Escriba si email" required>
+                    <div class="mb-3">
+                        <label for="asunto" class="form-label">Asunto:</label>
+                        <input type="text" class="form-control" id="asunto" placeholder="Ingrese el Asunto">
                     </div>
-
-                    <div class="formulario__inputs">
-                        <label for="asunto">Asunto: </label>
-                        <input type="text" id="asunto">
+                    <div class="input-group">
+                        <span class="input-group-text">Consulta:</span>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                      </div>
+                    <div class="mb-3 mt-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
                     </div>
-                    <div >
-                        <p>Escriba su consulta: </p>
-                        <label for="cosulta"></label>
-                        <textarea name="" id="consulta" cols="30" rows="10" required></textarea>
-                    </div>
-                    <div class="formulario__inputs">
-                        <label for="news"> ¿Recibir Novedades y Promociones?</label>
-                        <input type="checkbox" name="" id="news">
-                    </div>
-                    <div class="formulario__inputs">
-                        <input type="submit" value="Enviar Ahora">
-                        <input type="reset" name="" id="">
-                    </div>
-                </div>
+                    <button type="submit" class="btn-custom-form w-100">Enviar</button>
+                </form>
                 <div class="formulario__imagen">
                     <p>MCKing</p>
                 </div>
-            </form>
+            </div>
         </main>
-        <footer class="gridContainer" id="footer">
-            <div class="gridItem">
-                <p>Redes Sociales:</p>
-                <ul class="redes">
-                    <li><a href="https://es-la.facebook.com"><img src="../pictures/facebook.png" alt="facebook" width="40px"></a></li>
-                    <li><a href="https://www.instagram.com/?hl=es" target="_blank"><img src="../pictures/instagram.png" alt="instagram" width="40px"></a></li>
-                    <li><a href="https://twitter.com/?lang=es"><img src="../pictures/gorjeo.png" alt="twitter" width="40px"></a></li>
-                    <li><a href="https://www.linkedin.com/"><img src="../pictures/linkedin.png" alt="linkedin" width="40px"></a></li>
-                </ul>
+        <footer class="container-fluid" id="footer">
+            <div class="row p-2">
+                <div class="col-sm-12 col-md-6 d-flex flex-column align-items-center redes mt-3">
+                        <p>Redes Sociales</p>
+                        <ul>
+                            <li><a href="https://es-la.facebook.com"><img src="../pictures/facebook.png" alt="facebook" width="40px"></a></li>
+                            <li><a href="https://www.instagram.com/?hl=es" target="_blank"><img src="../pictures/instagram.png" alt="instagram" width="40px"></a></li>
+                            <li><a href="https://twitter.com/?lang=es"><img src="../pictures/gorjeo.png" alt="twitter" width="40px"></a></li>
+                            <li><a href="https://www.linkedin.com/"><img src="../pictures/linkedin.png" alt="linkedin" width="40px"></a></li>
+                        </ul>
+                </div>
+                <div class="col-md-6 logoFooter text-center">
+                    <p>MCking</p>
+                </div>
             </div>
-            <div class="logoFooter">
-                <p>MCking</p>
-            </div>
-            <div class="autor">
-                <p>Hecho por Matias</p>
-            </div>
+            <div class="mx-auto autor text-center">
+                <p class="my-auto">Hecho por Matias</p>
+            </div>  
         </footer>
     </div>
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
