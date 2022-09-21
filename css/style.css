@@ -164,7 +164,8 @@ body{
 .delivery{
     display: flex;
     justify-content: space-evenly;
-    text-align: center; 
+    text-align: center;
+    align-items: flex-start; 
     background-color: #F5F5F5;
     gap: 50px;
     margin: 50px;
@@ -181,16 +182,20 @@ body{
 .delivery div div{
     background-color: #405163;
     border-radius: 100%;
-    width: 200px;
-    height: 200px;
+    width: 10rem;
+    height: 10rem;
 }
 
 .invert{
     filter: invert(100%);
 }
 .delivery img{
-    width: 80px;
+    width: 4rem;
     border-radius: 100%;
+}
+
+.delivery div.arrow{
+    align-self: center;
 }
 
 .backAnotherGreen{
@@ -217,7 +222,6 @@ body{
     flex-direction: column;
     align-items: center;
     width: 50%;
-    /* padding: 30px; */
     text-align: center;
 } 
 
@@ -238,6 +242,13 @@ body{
     
 }
 
+.backAnotherGreen h3 a:visited, .backAnotherGreen h3 a{
+    color: #f5f5f5;
+    
+    
+
+}
+
 img.icon{
     position: relative;
     margin-left: 20px ;
@@ -246,7 +257,8 @@ img.icon{
     box-shadow: none;
 }
 
-/* ---------------------------------------- */
+/* ========================================================================= */
+
 /*==========================Página Productos=================================*/
 
 /* Fondo background */
@@ -318,7 +330,7 @@ img.icon{
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: flex-end;
-    height: 300px;
+    height: 31rem;
     overflow: hidden;
     border: 2px solid #000;
     border-radius: 10px;
@@ -332,8 +344,9 @@ img.icon{
 }
 
 .productos div img{
-    /* object-fit: cover; */
+    object-fit: cover;
     width: 50vw;
+    align-self: stretch;
     
 }
 
@@ -414,6 +427,7 @@ img.icon{
     flex-wrap: wrap;
     background-color: #F5F5F5;
     justify-content: space-evenly;
+    align-items: center;
     margin: 20px 0;
     padding: 20px 0;
 
@@ -435,9 +449,13 @@ img.icon{
 }
 
 
-.ubicacion__imagen img{
-    width: 500px;
+.ubicacion__imagen {
+    border: 2px solid black;
+    width: 31rem;
+    height: 25rem;
 }
+
+
 
 /*==================================================================*/
 
@@ -552,7 +570,7 @@ button.btn-custom-form:hover{
 }
 
 
-@media screen and (max-width: 850px){
+@media screen and (max-width: 991px){
 
     /*=======================Página Inicio=========================*/
 
@@ -677,6 +695,10 @@ button.btn-custom-form:hover{
    
 }
 
+.productos div{
+    height: 25rem;
+}
+
 .productos div h3{
     position: absolute;
 }
@@ -722,7 +744,7 @@ button.btn-custom-form:hover{
 
 
 }
-@media screen and (max-width:750px){
+@media screen and (max-width:767px){
 
     #Header .Header__menu{
         width: 100vw;
@@ -762,7 +784,7 @@ button.btn-custom-form:hover{
  
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 578px) {
 
    
     .accessDirect{
@@ -770,6 +792,10 @@ button.btn-custom-form:hover{
         url(../pictures/screen-850-prueba3.jpg);;
          background-size: cover; 
      } 
+
+    .productos div{
+        height: 19rem;
+    }
 
 }
 
