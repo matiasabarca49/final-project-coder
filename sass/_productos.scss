@@ -1,0 +1,79 @@
+/* Menu de productos */
+.submenu {
+    /* background-color: #405163; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 167px;
+    left: 0;
+    color: white;
+    padding: 30px 5px;
+  }
+  
+  .submenu ul {
+    padding-left: 0;
+  }
+  
+  .submenu li {
+    margin: 10px 0;
+    padding: 20px 50px;
+    background-color: #e9f4f6;
+    border-radius: 40px;
+    text-align: center;
+    list-style-type: none;
+  }
+  
+  .submenu li a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  /* ---------------------------------------- */
+  /* Contenido Página productos */
+  #main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-left: 25%;
+    gap: 30px;
+    color: #fff;
+  }
+  
+  .productos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #fff;
+    width: 70vw;
+    margin-bottom: 20px;
+  }
+  
+  .productos div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 31rem;
+    overflow: hidden;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 2px 2px 50px black;
+  }
+  
+  .productos div h3 {
+    font-size: 40px;
+    text-shadow: 0 0 10px black;
+  }
+  
+  .productos div img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 50vw;
+    align-self: stretch;
+  }
+  
+  .productosTitulo {
+    font-size: 3rem;
+    font-weight: 800;
+  }
