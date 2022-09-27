@@ -271,12 +271,10 @@ body {
   color: white;
   padding: 30px 5px;
 }
-
 .submenu ul {
   padding-left: 0;
 }
-
-.submenu li {
+.submenu ul li {
   margin: 10px 0;
   padding: 20px 50px;
   background-color: #e9f4f6;
@@ -284,8 +282,7 @@ body {
   text-align: center;
   list-style-type: none;
 }
-
-.submenu li a {
+.submenu ul li a {
   color: #000;
   text-decoration: none;
 }
@@ -300,8 +297,11 @@ body {
   gap: 30px;
   color: #fff;
 }
-
-.productos {
+#main .productosTitulo {
+  font-size: 3rem;
+  font-weight: 800;
+}
+#main .productos {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -309,8 +309,7 @@ body {
   width: 70vw;
   margin-bottom: 20px;
 }
-
-.productos div {
+#main .productos div {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -321,22 +320,15 @@ body {
   border-radius: 10px;
   box-shadow: 2px 2px 50px black;
 }
-
-.productos div h3 {
+#main .productos div h3 {
   font-size: 40px;
   text-shadow: 0 0 10px black;
 }
-
-.productos div img {
+#main .productos div img {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   width: 50vw;
   align-self: stretch;
-}
-
-.productosTitulo {
-  font-size: 3rem;
-  font-weight: 800;
 }
 
 /*==========================Página Promociones=================================*/
@@ -351,29 +343,24 @@ body {
   padding-bottom: 30px;
   text-align: center;
 }
-
 .combos h2 {
   color: #fff;
   font-size: 3rem;
   margin: 30px 0;
   font-family: "Secular One", sans-serif;
 }
-
 .combos .combos__contenedor {
   background-color: #F5F5F5;
 }
-
 .combos .combos__contenedor div {
   margin: 20px 0;
   height: 25%;
   overflow: hidden;
 }
-
-.combos .combos__contenedor h3 {
+.combos .combos__contenedor div h3 {
   font-size: 2rem;
 }
-
-.combos .combos__contenedor img {
+.combos .combos__contenedor div img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -406,23 +393,17 @@ body {
   margin: 20px 0;
   padding: 20px 0;
 }
-
-.ubicacion__informacion h3 {
-  font-size: 30pt;
+.ubicacion .ubicacion__informacion h3 {
+  font-size: 2.5rem;
+  margin: 20px 0;
+}
+.ubicacion .ubicacion__imagen {
+  width: 31rem;
+  height: 25rem;
 }
 
 .ubicacion--derecha {
   flex-direction: row-reverse;
-}
-
-.ubicacion__informacion h3 {
-  margin: 20px 0;
-}
-
-.ubicacion__imagen {
-  border: 2px solid black;
-  width: 31rem;
-  height: 25rem;
 }
 
 /*==========================Página Contacto=================================*/
@@ -440,8 +421,7 @@ body {
   margin-bottom: 20px;
   box-shadow: 0 0 15px #000;
 }
-
-.formulario__imagen {
+.formulario .formulario__imagen {
   background-color: #405163;
   border: 2px solid black;
   border-radius: 100%;
@@ -452,8 +432,7 @@ body {
   padding: 30px;
   margin: 50px;
 }
-
-.formulario__imagen p {
+.formulario .formulario__imagen p {
   position: relative;
   right: 100px;
 }
@@ -568,34 +547,31 @@ button.btn-custom-form:hover {
   }
   /*========================================================================*/
   /*=======================Página productos=========*/
+  .submenu {
+    display: none;
+  }
   #main {
     margin-left: 0;
   }
-  .productos {
+  #main .productos {
     width: 100%;
   }
-  .productos div {
+  #main .productos div {
     height: 25rem;
   }
-  .productos div h3 {
+  #main .productos div h3 {
     position: absolute;
   }
-  .productos div img {
+  #main .productos div img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .submenu {
-    display: none;
-  }
   /*================================================================*/
   /*===================Página Sucursales=============================*/
   .ubicacion {
     padding: 0;
-  }
-  .ubicacion__imagen img {
-    width: 100%;
   }
   /*================================================================*/
   /*===================Página Contacto=============================*/
@@ -604,8 +580,8 @@ button.btn-custom-form:hover {
     margin: 0;
     margin-bottom: 20px;
   }
-  /*====================================================================================*/
 }
+/*====================================================================================*/
 @media screen and (max-width: 767px) {
   /*==================HEADER===============*/
   #Header .Header__nav .Header__menu {
@@ -622,21 +598,13 @@ button.btn-custom-form:hover {
     padding: 10px;
   }
   /*=========================FOOTER===========================*/
-  .gridContainer {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    height: 300px;
-  }
-  #footer .logoFooter {
+  #footer div .logoFooter {
     grid-column: 1/2;
     grid-row: 2/3;
   }
   #footer .autor {
     grid-column: 1/2;
     grid-row: 3/4;
-  }
-  .gridContainer div:first-child {
-    justify-self: flex-start;
   }
 }
 @media screen and (max-width: 578px) {
@@ -653,5 +621,16 @@ button.btn-custom-form:hover {
   .productos div {
     height: 19rem;
   }
+  .formulario .formulario__imagen p {
+    font-size: 7rem;
+    right: 80px;
+  }
 }
-/*==================================================================*//*# sourceMappingURL=main.css.map */
+/*==================================================================*/
+/*GALAXY FOLD  o telefonos plegables*/
+@media screen and (max-width: 300px) {
+  .formulario .formulario__imagen p {
+    font-size: 6rem;
+    right: 60px;
+  }
+}/*# sourceMappingURL=main.css.map */

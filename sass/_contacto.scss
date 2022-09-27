@@ -14,24 +14,23 @@
     margin: 0 auto;
     margin-bottom: 20px; 
     box-shadow: 0 0 15px #000;
+    .formulario__imagen{
+        background-color: #405163;
+        border: 2px solid black;
+        border-radius: 100%;
+        width: 200px;
+        height: 200px;
+        font-family: 'Inspiration', cursive;
+        font-size: 100pt;
+        padding: 30px;
+        margin: 50px;
+        p{
+            position: relative;
+            right: 100px;
+        }
+    }
 }
 
-.formulario__imagen{
-
-    background-color: #405163;
-    border: 2px solid black;
-    border-radius: 100%;
-    width: 200px;
-    height: 200px;
-    font-family: 'Inspiration', cursive;
-    font-size: 100pt;
-    padding: 30px;
-    margin: 50px;
-}
-.formulario__imagen p{
-    position: relative;
-    right: 100px;
-}
 
 .btn-custom-form{
     color: #fff;
