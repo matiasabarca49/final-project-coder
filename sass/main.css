@@ -195,6 +195,10 @@ body {
 .delivery div div .invert {
   filter: invert(100%);
 }
+.delivery div p {
+  text-align: justify;
+  width: 12.5rem;
+}
 .delivery .arrow {
   align-self: center;
 }
@@ -526,10 +530,14 @@ button.btn-custom-form:hover {
   .delivery {
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: justify;
   }
   .delivery div img.rotateArrow {
     transform: rotate(90deg);
+  }
+  .backAnotherBlue, .backAnotherWhite {
+    padding: 0;
   }
   .backAnotherBlue div, .backAnotherWhite div {
     text-align: justify;
@@ -615,8 +623,7 @@ button.btn-custom-form:hover {
   .backAnotherBlue h3.locales {
     font-size: 2rem;
     text-align: justify;
-    padding: 0 20px;
-    margin-bottom: 30px;
+    padding: 10px 20px;
   }
   .productos div {
     height: 19rem;
