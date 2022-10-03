@@ -1,7 +1,9 @@
 $color-principal:#405163;
 $color-secundario:#F5F5F5;
+$menu-productos:#e9f4f6;
 $fuente-principal:'Secular One', sans-serif;
 $fuente-logo:'Inspiration', cursive;
+$efect-bg: linear-gradient(90deg, rgba(100,130,200,1) 0%, rgba(75,90,150,1) 0%, rgba(64,81,99,1) 59%);
 
 *{
     margin: 0;
@@ -34,7 +36,7 @@ body{
     display: flex;
     position: sticky;
     top: 0;
-    background-color: $color-principal;
+    background-image: $efect-bg;
     height: 70px;
     width: 100%;
     z-index: 999;
@@ -96,7 +98,7 @@ body{
 }
 
 #footer{
-    background-color: $color-principal;
+    background-image: $efect-bg;
     color: #fff;
     div{
         .redes{

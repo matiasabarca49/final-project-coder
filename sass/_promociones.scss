@@ -15,10 +15,10 @@
         color: #fff;
         font-size: 3rem;
         margin: 30px 0;
-        font-family: 'Secular One', sans-serif;
+        font-family: $fuente-principal;
     }
     .combos__contenedor{
-        background-color: #F5F5F5;
+        background-color: $color-secundario;
         div{
             margin: 20px 0;
             height: 25%;

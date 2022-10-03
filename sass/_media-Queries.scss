@@ -29,7 +29,7 @@
                 opacity: 0;
             }
             input:checked + .Header__menu{
-                top: 55px;
+                top: 70px;
                 transition: 0.5s;
             }
             .Header__menu{
@@ -39,21 +39,21 @@
                 text-align: center;
                 top: -1000px;
                 width: 30vw;
-                background-color: #405163;
+                background-color: $color-principal;
                 transition: 0.5s;
                 z-index: 1;
                 border-radius: 10px;
-                box-shadow: 0 0 10px #405163;
+                box-shadow: 0 0 10px $color-principal;
                 li{
                     padding: 10px;
                     margin: 10px 0;
                     width: 100%;
                 }
                 li:hover{
-                    background-color: #F5F5F5;
+                    background-color: $color-secundario;
                 }
                 li:hover a{
-                    color: #405163;
+                    color: $color-principal;
                 }
             }
         }
@@ -67,7 +67,7 @@
         background-size: cover;
         .accessDirect__eslogan{
             h1{
-                font-family: 'Secular One', sans-serif;
+                font-family: $fuente-principal;
                 font-size:3rem;
                 span{
                     display: block;
@@ -167,7 +167,7 @@
                 li{
                     a:hover{
                         text-decoration: none;
-                        color: #405163;
+                        color: $color-principal;
                     }
                 }
             }
