@@ -39,7 +39,7 @@
                 text-align: center;
                 top: -1000px;
                 width: 30vw;
-                background-color: $color-principal;
+                background-image:  $efect-bg;
                 transition: 0.5s;
                 z-index: 1;
                 border-radius: 10px;
@@ -120,8 +120,12 @@
             width: 100%;
             div{
                 height: 25rem;
+                color: $color-secundario;
+                
+
                 h3{
                     position: absolute;
+                    text-shadow: 0 0 10px black;
                 }
                 img{
                     width: 100%;

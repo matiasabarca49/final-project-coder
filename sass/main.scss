@@ -1,9 +1,10 @@
 $color-principal:#405163;
-$color-secundario:#F5F5F5;
+$color-secundario:#F4F4F4;
 $menu-productos:#e9f4f6;
 $fuente-principal:'Secular One', sans-serif;
 $fuente-logo:'Inspiration', cursive;
 $efect-bg: linear-gradient(90deg, rgba(100,130,200,1) 0%, rgba(75,90,150,1) 0%, rgba(64,81,99,1) 59%);
+$color-fonts: #000;
 
 *{
     margin: 0;
@@ -13,7 +14,8 @@ $efect-bg: linear-gradient(90deg, rgba(100,130,200,1) 0%, rgba(75,90,150,1) 0%, 
 }
 
 body{
-    background-color: $color-secundario;
+    background-color: #fff;
+    color: $color-fonts;
     /* font-family: sans-serif; */
     font-family: $fuente-principal;
 }
@@ -50,11 +52,14 @@ body{
         text-shadow: 2px 2px 2px #000; 
         a{
             text-decoration: none;
-        } 
-        a:visited{
-            color: $color-secundario;
+            &:visited{
+                color: $color-secundario;
+            }
+            &:link{
+                color: $color-secundario;
+            }
         }
-    }
+    }       
     .Header__nav{
         img, input{
             display: none;
@@ -87,19 +92,12 @@ body{
 
 /*=============================FOOTER===================================*/
 
-.gridContainer{ 
-    display: grid;
-    height: 200px;
-    border-top: 2px solid $color-secundario;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-}
+
 
 #footer{
     background-image: $efect-bg;
     color: #fff;
+    border-top: 5px solid $color-secundario;
     div{
         .redes{
             p{

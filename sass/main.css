@@ -6,7 +6,8 @@
 }
 
 body {
-  background-color: #F5F5F5;
+  background-color: #fff;
+  color: #000;
   /* font-family: sans-serif; */
   font-family: "Secular One", sans-serif;
 }
@@ -34,7 +35,7 @@ body {
 #Header .Header__logo {
   font-family: "Inspiration", cursive;
   font-size: 50px;
-  color: #F5F5F5;
+  color: #F4F4F4;
   padding: 0 20px;
   line-height: 1.2;
   text-shadow: 2px 2px 2px #000;
@@ -43,7 +44,10 @@ body {
   text-decoration: none;
 }
 #Header .Header__logo a:visited {
-  color: #F5F5F5;
+  color: #F4F4F4;
+}
+#Header .Header__logo a:link {
+  color: #F4F4F4;
 }
 #Header .Header__nav img, #Header .Header__nav input {
   display: none;
@@ -61,7 +65,7 @@ body {
 }
 #Header .Header__nav .Header__menu li a {
   text-decoration: none;
-  color: #F5F5F5;
+  color: #F4F4F4;
   transition: padding 0.5s;
 }
 #Header .Header__nav .Header__menu li a:hover {
@@ -72,19 +76,10 @@ body {
 
 /* --------------------------------------------------------------------*/
 /*=============================FOOTER===================================*/
-.gridContainer {
-  display: grid;
-  height: 200px;
-  border-top: 2px solid #F5F5F5;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-  align-items: center;
-}
-
 #footer {
   background-image: linear-gradient(90deg, rgb(100, 130, 200) 0%, rgb(75, 90, 150) 0%, rgb(64, 81, 99) 59%);
   color: #fff;
+  border-top: 5px solid #F4F4F4;
 }
 #footer div .redes p {
   font-size: 2rem;
@@ -113,7 +108,7 @@ body {
   grid-row: 2/3;
   grid-column: 2/3;
   align-self: flex-end;
-  border: 2px double #F5F5F5;
+  border: 2px double #F4F4F4;
   width: 190px;
 }
 #footer .autor p {
@@ -136,7 +131,7 @@ body {
   font-family: "Secular One", sans-serif;
   font-size: 3rem;
   font-weight: 800;
-  color: #F5F5F5;
+  color: #F4F4F4;
 }
 .accessDirect__eslogan h1 span {
   display: block;
@@ -152,11 +147,12 @@ body {
 .accessDirect__eslogan .accessDirect__botones li {
   list-style-type: none;
   margin-bottom: 20px;
+  transition: all 0.2s;
 }
 .accessDirect__eslogan .accessDirect__botones li a {
-  color: #F5F5F5;
+  color: #000;
   text-decoration: none;
-  background-image: linear-gradient(90deg, rgb(100, 130, 200) 0%, rgb(75, 90, 150) 0%, rgb(64, 81, 99) 59%);
+  background-color: #F4F4F4;
   font-size: 1.5rem;
   border-radius: 70px;
   padding: 20px;
@@ -164,12 +160,14 @@ body {
   box-shadow: 2px 2px 5px black;
 }
 .accessDirect__eslogan .accessDirect__botones li a .icon {
-  filter: invert(100%);
   position: relative;
   margin-left: 10px;
   width: 40px;
   height: 40px;
   box-shadow: none;
+}
+.accessDirect__eslogan .accessDirect__botones li:hover {
+  transform: scale(110%);
 }
 
 .delivery {
@@ -177,7 +175,6 @@ body {
   justify-content: space-evenly;
   text-align: center;
   align-items: flex-start;
-  background-color: #F5F5F5;
   gap: 50px;
   padding: 50px;
 }
@@ -215,9 +212,13 @@ body {
   justify-content: space-evenly;
   align-items: center;
   padding: 30px 0;
+  margin: 0 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-radius: 20px;
   flex-wrap: wrap-reverse;
   flex-direction: row-reverse;
-  background-color: #F5F5F5;
+  background-color: #F4F4F4;
 }
 
 .backAnotherBlue {
@@ -225,9 +226,12 @@ body {
   justify-content: space-evenly;
   align-items: center;
   padding: 30px 0;
+  margin: 0 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-radius: 20px;
   flex-wrap: wrap-reverse;
-  background-image: linear-gradient(90deg, rgb(100, 130, 200) 0%, rgb(75, 90, 150) 0%, rgb(64, 81, 99) 59%);
-  color: #fff;
+  background-color: #F4F4F4;
 }
 
 .backAnotherBlue div, .backAnotherWhite div {
@@ -239,7 +243,7 @@ body {
 }
 .backAnotherBlue div p, .backAnotherWhite div p {
   font-size: 1.2rem;
-  text-align: justify;
+  text-align: center;
 }
 .backAnotherBlue div h3, .backAnotherWhite div h3 {
   text-align: center;
@@ -258,10 +262,10 @@ body {
   padding: 30px;
 }
 .backAnotherBlue h3.locales a, .backAnotherWhite h3.locales a {
-  color: #F5F5F5;
+  color: #000;
 }
 .backAnotherBlue h3.locales a:visited, .backAnotherWhite h3.locales a:visited {
-  color: #F5F5F5;
+  color: #000;
 }
 
 /* ========================================================================= */
@@ -273,7 +277,6 @@ body {
   position: fixed;
   top: 167px;
   left: 0;
-  color: #fff;
   padding: 30px 5px;
 }
 .submenu ul {
@@ -282,10 +285,14 @@ body {
 .submenu ul li {
   margin: 10px 0;
   padding: 20px 50px;
-  background-color: #e9f4f6;
+  background-color: #F4F4F4;
   border-radius: 40px;
   text-align: center;
   list-style-type: none;
+  transform: all 0.2s;
+}
+.submenu ul li:hover {
+  transform: scale(110%);
 }
 .submenu ul li a {
   color: #000;
@@ -293,14 +300,19 @@ body {
 }
 
 /* ---------------------------------------- */
+/*Titulo*/
+.productTitle {
+  background-image: linear-gradient(rgba(5, 7, 12, 0.87), rgba(5, 7, 12, 0.87)), url(../pictures/Logo2.png);
+  background-size: 55rem;
+}
+
 /* Contenido Página productos */
 #main {
   display: flex;
   flex-direction: column;
-  margin-top: 10%;
+  margin-top: 2%;
   margin-left: 25%;
   gap: 30px;
-  color: #fff;
 }
 #main .productosTitulo {
   font-size: 3rem;
@@ -310,7 +322,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  color: #fff;
   width: 70vw;
   margin-bottom: 20px;
 }
@@ -319,15 +330,13 @@ body {
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: flex-end;
+  background-color: #F4F4F4;
   height: 31rem;
   overflow: hidden;
-  border: 2px solid #000;
-  border-radius: 10px;
-  box-shadow: 2px 2px 50px #000;
+  border-radius: 20px;
 }
 #main .productos div h3 {
   font-size: 40px;
-  text-shadow: 0 0 10px #000;
 }
 #main .productos div img {
   -o-object-fit: cover;
@@ -355,7 +364,7 @@ body {
   font-family: "Secular One", sans-serif;
 }
 .combos .combos__contenedor {
-  background-color: #F5F5F5;
+  background-color: #F4F4F4;
 }
 .combos .combos__contenedor div {
   margin: 20px 0;
@@ -392,7 +401,7 @@ body {
 .ubicacion {
   display: flex;
   flex-wrap: wrap;
-  background-color: #F5F5F5;
+  background-color: #F4F4F4;
   justify-content: space-evenly;
   align-items: center;
   margin: 20px 0;
@@ -413,7 +422,7 @@ body {
 
 /*==========================Página Contacto=================================*/
 .formulario {
-  background-color: #F5F5F5;
+  background-color: #F4F4F4;
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: space-around;
@@ -498,7 +507,7 @@ button.btn-custom-form:hover {
     text-align: center;
     top: -1000px;
     width: 30vw;
-    background-color: #405163;
+    background-image: linear-gradient(90deg, rgb(100, 130, 200) 0%, rgb(75, 90, 150) 0%, rgb(64, 81, 99) 59%);
     transition: 0.5s;
     z-index: 1;
     border-radius: 10px;
@@ -510,7 +519,7 @@ button.btn-custom-form:hover {
     width: 100%;
   }
   #Header .Header__nav .Header__menu li:hover {
-    background-color: #F5F5F5;
+    background-color: #F4F4F4;
   }
   #Header .Header__nav .Header__menu li:hover a {
     color: #405163;
@@ -567,9 +576,11 @@ button.btn-custom-form:hover {
   }
   #main .productos div {
     height: 25rem;
+    color: #F4F4F4;
   }
   #main .productos div h3 {
     position: absolute;
+    text-shadow: 0 0 10px black;
   }
   #main .productos div img {
     width: 100%;
