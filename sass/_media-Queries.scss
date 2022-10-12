@@ -118,18 +118,21 @@
         margin-left: 0;
         margin-right: 0;
         .productos{
-        
             display: flex;
             flex-direction: column;
             gap: 15px;
             width: 100%;
-            margin-bottom: 20px;*/
+            margin-bottom: 20px;
             div{
                 overflow: hidden;
                 border-radius: 20px;
                 height: 25rem;
                 color: $color-secundario;
-                
+                &:hover{
+                    transform: none;
+                    box-shadow: none;
+                }
+
                 h3{
                     position: absolute;
                     text-shadow: 0 0 10px black;
