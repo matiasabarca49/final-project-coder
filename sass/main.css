@@ -427,7 +427,7 @@ body {
 .combos .combos__background .combos__contenedor div p {
   color: #393939;
   text-align: justify;
-  /* height: 72px; */
+  height: 100px;
 }
 .combos .combos__background .combos__contenedor div img {
   width: 100%;
@@ -541,7 +541,7 @@ button.btn-custom-form:hover {
     background-color: #020202;
   }
   .accessDirect .accessDirect__content {
-    max-width: 1200px;
+    max-width: 1920px;
     margin: 0 auto;
   }
   .carouselCustom {
