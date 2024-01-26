@@ -22,17 +22,19 @@ body {
 /*============================HEADER===================================*/
 /*Menu de navegación y logo*/
 #Header {
-  display: flex;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-image: linear-gradient(90deg, rgb(100, 130, 200) 0%, rgb(75, 90, 150) 0%, rgb(64, 81, 99) 59%);
   height: 70px;
   width: 100%;
   z-index: 999;
-  justify-content: space-between;
 }
-#Header .Header__logo {
+#Header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+#Header div .Header__logo {
   font-family: "Inspiration", cursive;
   font-size: 50px;
   color: #F4F4F4;
@@ -40,35 +42,35 @@ body {
   line-height: 1.2;
   text-shadow: 2px 2px 2px #000;
 }
-#Header .Header__logo a {
+#Header div .Header__logo a {
   text-decoration: none;
 }
-#Header .Header__logo a:visited {
+#Header div .Header__logo a:visited {
   color: #F4F4F4;
 }
-#Header .Header__logo a:link {
+#Header div .Header__logo a:link {
   color: #F4F4F4;
 }
-#Header .Header__nav img, #Header .Header__nav input {
+#Header div .Header__nav img, #Header div .Header__nav input {
   display: none;
   visibility: hidden;
 }
-#Header .Header__nav .Header__menu {
+#Header div .Header__nav .Header__menu {
   margin-right: 30px;
   padding-left: 0;
 }
-#Header .Header__nav .Header__menu li {
+#Header div .Header__nav .Header__menu li {
   display: inline-block;
   list-style: none;
-  font-size: 20px;
+  font-size: 1rem;
   padding: 20px;
 }
-#Header .Header__nav .Header__menu li a {
+#Header div .Header__nav .Header__menu li a {
   text-decoration: none;
   color: #F4F4F4;
   transition: padding 0.5s;
 }
-#Header .Header__nav .Header__menu li a:hover {
+#Header div .Header__nav .Header__menu li a:hover {
   padding: 10px;
   text-decoration: underline;
   transform: scale(2);
@@ -80,6 +82,10 @@ body {
   background-image: linear-gradient(90deg, rgb(100, 130, 200) 0%, rgb(75, 90, 150) 0%, rgb(64, 81, 99) 59%);
   color: #fff;
   border-top: 5px solid #F4F4F4;
+}
+#footer div {
+  max-width: 1200px;
+  margin: auto;
 }
 #footer div .redes p {
   font-size: 2rem;
@@ -116,40 +122,40 @@ body {
 }
 
 /* Imagen principal con eslogan*/
-.accessDirect {
+.accessDirect .accessDirect__content {
+  height: 95vh;
   display: flex;
   justify-content: flex-start;
   background-image: url(../pictures/stollen-prueba4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 95vh;
 }
-.accessDirect__eslogan {
+.accessDirect .accessDirect__content .accessDirect__eslogan {
   margin: 5% 5%;
 }
-.accessDirect__eslogan h1 {
+.accessDirect .accessDirect__content .accessDirect__eslogan h1 {
   font-family: "Secular One", sans-serif;
   font-size: 3rem;
   font-weight: 800;
   color: #F4F4F4;
 }
-.accessDirect__eslogan h1 span {
+.accessDirect .accessDirect__content .accessDirect__eslogan h1 span {
   display: block;
   font-size: 4rem;
 }
-.accessDirect__eslogan .accessDirect__botones {
+.accessDirect .accessDirect__content .accessDirect__eslogan .accessDirect__botones {
   margin-top: 20px;
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
   padding-left: 0;
 }
-.accessDirect__eslogan .accessDirect__botones li {
+.accessDirect .accessDirect__content .accessDirect__eslogan .accessDirect__botones li {
   list-style-type: none;
   margin-bottom: 20px;
   transition: all 0.2s;
 }
-.accessDirect__eslogan .accessDirect__botones li a {
+.accessDirect .accessDirect__content .accessDirect__eslogan .accessDirect__botones li a {
   color: #000;
   text-decoration: none;
   background-color: #F4F4F4;
@@ -159,14 +165,14 @@ body {
   font-weight: 800;
   box-shadow: 2px 2px 5px black;
 }
-.accessDirect__eslogan .accessDirect__botones li a .icon {
+.accessDirect .accessDirect__content .accessDirect__eslogan .accessDirect__botones li a .icon {
   position: relative;
   margin-left: 10px;
   width: 40px;
   height: 40px;
   box-shadow: none;
 }
-.accessDirect__eslogan .accessDirect__botones li:hover {
+.accessDirect .accessDirect__content .accessDirect__eslogan .accessDirect__botones li:hover {
   transform: scale(110%);
 }
 
@@ -198,6 +204,7 @@ body {
 .delivery div p {
   text-align: justify;
   width: 12.5rem;
+  color: #393939;
 }
 .delivery .arrow {
   align-self: center;
@@ -216,6 +223,7 @@ body {
   overflow: hidden;
   margin-bottom: 20px;
   border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(173, 185, 201, 0.3);
   flex-wrap: wrap-reverse;
   flex-direction: row-reverse;
   background-color: #F4F4F4;
@@ -230,6 +238,7 @@ body {
   overflow: hidden;
   margin-bottom: 20px;
   border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(173, 185, 201, 0.3);
   flex-wrap: wrap-reverse;
   background-color: #F4F4F4;
 }
@@ -244,12 +253,15 @@ body {
 .backAnotherBlue div p, .backAnotherWhite div p {
   font-size: 1.2rem;
   text-align: center;
+  color: #393939;
+  text-align: justify;
 }
 .backAnotherBlue div h3, .backAnotherWhite div h3 {
   text-align: center;
   font-size: 3rem;
   font-weight: 900;
   margin-bottom: 40px;
+  color: #010101;
 }
 .backAnotherBlue img, .backAnotherWhite img {
   position: relative;
@@ -260,12 +272,13 @@ body {
   font-size: 3rem;
   font-weight: 900;
   padding: 30px;
+  color: #393939;
 }
 .backAnotherBlue h3.locales a, .backAnotherWhite h3.locales a {
-  color: #000;
+  color: #010101;
 }
 .backAnotherBlue h3.locales a:visited, .backAnotherWhite h3.locales a:visited {
-  color: #000;
+  color: #010101;
 }
 
 /* ========================================================================= */
@@ -310,7 +323,7 @@ body {
 #main {
   display: flex;
   flex-direction: column;
-  margin-top: 2%;
+  margin-top: 25px;
   margin-left: 20%;
   margin-right: 5%;
   gap: 30px;
@@ -359,7 +372,7 @@ body {
 #main .productos div:hover {
   transform: scale(110%);
   z-index: 100;
-  box-shadow: 0 0 50px black;
+  box-shadow: 0 5px 19px rgba(128, 128, 128, 0.5);
 }
 #main .productos div h3 {
   font-size: 2.5rem;
@@ -373,8 +386,7 @@ body {
 #main .productos div img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 20px;
 }
 
@@ -387,6 +399,7 @@ body {
 
 .combos {
   margin: 0 auto;
+  padding: 0;
   padding-bottom: 30px;
   text-align: center;
 }
@@ -396,18 +409,27 @@ body {
   margin: 30px 0;
   font-family: "Secular One", sans-serif;
 }
-.combos .combos__contenedor {
+.combos .combos__background {
+  padding: 0.8rem;
+}
+.combos .combos__background .combos__contenedor {
   background-color: #F4F4F4;
 }
-.combos .combos__contenedor div {
+.combos .combos__background .combos__contenedor div {
   margin: 20px 0;
   height: 25%;
   overflow: hidden;
 }
-.combos .combos__contenedor div h3 {
+.combos .combos__background .combos__contenedor div h3 {
   font-size: 2rem;
+  color: #010101;
 }
-.combos .combos__contenedor div img {
+.combos .combos__background .combos__contenedor div p {
+  color: #393939;
+  text-align: justify;
+  /* height: 72px; */
+}
+.combos .combos__background .combos__contenedor div img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -443,6 +465,10 @@ body {
 .ubicacion .ubicacion__informacion h3 {
   font-size: 2.5rem;
   margin: 20px 0;
+  color: #010101;
+}
+.ubicacion .ubicacion__informacion p, .ubicacion .ubicacion__informacion ul {
+  color: #393939;
 }
 .ubicacion .ubicacion__imagen {
   width: 31rem;
@@ -467,6 +493,7 @@ body {
   margin: 0 auto;
   margin-bottom: 20px;
   box-shadow: 0 0 15px #000;
+  max-width: 1200px;
 }
 .formulario .formulario__imagen {
   background-color: #405163;
@@ -502,16 +529,72 @@ button.btn-custom-form:hover {
   box-shadow: 0 0 10px #283542;
 }
 
+@media screen and (min-width: 1200px) {
+  #Header div {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  #Header div .Header__logo {
+    margin: 0;
+  }
+  .accessDirect {
+    background-color: #020202;
+  }
+  .accessDirect .accessDirect__content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .carouselCustom {
+    background-color: #020202;
+  }
+  .carouselCustom .carousel {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .delivery, .backAnotherBlue, .backAnotherWhite {
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  /*=======================Página Productos=========================*/
+  #main {
+    margin-left: 230px;
+    margin-right: 50px;
+  }
+  #main section {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  /*=======================Página Promociones=========================*/
+  .combos .combos__background {
+    background-color: #f4f4f4;
+  }
+  .combos .combos__background .combos__contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  /*=======================Página sucursales=========================*/
+  main .ubicacion__background {
+    background-color: #f4f4f4;
+  }
+  main .ubicacion__background .ubicacion {
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+}
 @media screen and (max-width: 991px) {
   /*=======================Página Inicio=========================*/
-  #Header .Header__nav {
+  #Header div {
+    align-items: stretch;
+  }
+  #Header div .Header__nav {
     display: flex;
     position: relative;
     flex-direction: row-reverse;
     align-items: center;
     z-index: 999;
   }
-  #Header .Header__nav img {
+  #Header div .Header__nav img {
     display: block;
     visibility: visible;
     width: 40px;
@@ -519,7 +602,7 @@ button.btn-custom-form:hover {
     z-index: 1;
     filter: invert(100%);
   }
-  #Header .Header__nav input[type=checkbox] {
+  #Header div .Header__nav input[type=checkbox] {
     display: block;
     visibility: visible;
     position: absolute;
@@ -529,11 +612,11 @@ button.btn-custom-form:hover {
     margin-right: 20px;
     opacity: 0;
   }
-  #Header .Header__nav input:checked + .Header__menu {
-    top: 70px;
+  #Header div .Header__nav input:checked + .Header__menu {
+    top: 75px;
     transition: 0.5s;
   }
-  #Header .Header__nav .Header__menu {
+  #Header div .Header__nav .Header__menu {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -546,15 +629,15 @@ button.btn-custom-form:hover {
     border-radius: 10px;
     box-shadow: 0 0 10px #405163;
   }
-  #Header .Header__nav .Header__menu li {
+  #Header div .Header__nav .Header__menu li {
     padding: 10px;
     margin: 10px 0;
     width: 100%;
   }
-  #Header .Header__nav .Header__menu li:hover {
+  #Header div .Header__nav .Header__menu li:hover {
     background-color: #F4F4F4;
   }
-  #Header .Header__nav .Header__menu li:hover a {
+  #Header div .Header__nav .Header__menu li:hover a {
     color: #405163;
   }
   /*==========Página Inicio=============*/
@@ -562,11 +645,11 @@ button.btn-custom-form:hover {
     background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.7)), url(../pictures/screen-850-prueba2.jpg);
     background-size: cover;
   }
-  .accessDirect .accessDirect__eslogan h1 {
+  .accessDirect .accessDirect__content .accessDirect__eslogan h1 {
     font-family: "Secular One", sans-serif;
     font-size: 3rem;
   }
-  .accessDirect .accessDirect__eslogan h1 span {
+  .accessDirect .accessDirect__content .accessDirect__eslogan h1 span {
     display: block;
     font-size: 4rem;
   }
@@ -598,7 +681,7 @@ button.btn-custom-form:hover {
   }
   /*========================================================================*/
   /*=======================Página productos=========*/
-  .submenu {
+  #Header .submenu {
     display: none;
   }
   #main {
@@ -629,8 +712,7 @@ button.btn-custom-form:hover {
   #main .productos div img {
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
   /*================================================================*/
   /*===================Página Sucursales=============================*/
@@ -648,12 +730,12 @@ button.btn-custom-form:hover {
 /*====================================================================================*/
 @media screen and (max-width: 767px) {
   /*==================HEADER===============*/
-  #Header .Header__nav .Header__menu {
+  #Header div .Header__nav .Header__menu {
     width: 100vw;
     margin: 0;
     margin-right: 0;
   }
-  #Header .Header__nav .Header__menu li a:hover {
+  #Header div .Header__nav .Header__menu li a:hover {
     text-decoration: none;
     color: #405163;
   }
@@ -672,7 +754,7 @@ button.btn-custom-form:hover {
   }
 }
 @media screen and (max-width: 578px) {
-  .accessDirect {
+  .accessDirect .accessDirect__content {
     background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.7)), url(../pictures/screen-850-prueba3.jpg);
     background-size: cover;
   }
@@ -696,4 +778,6 @@ button.btn-custom-form:hover {
     font-size: 6rem;
     right: 60px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */

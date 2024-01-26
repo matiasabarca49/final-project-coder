@@ -35,53 +35,56 @@ body{
 /*Menu de navegación y logo*/
 
 #Header{
-    display: flex;
     position: sticky;
     top: 0;
     background-image: $efect-bg;
     height: 70px;
     width: 100%;
     z-index: 999;
-    justify-content: space-between;
-    .Header__logo{
-        font-family: $fuente-logo;
-        font-size: 50px;
-        color: $color-secundario;
-        padding: 0 20px;
-        line-height: 1.2;
-        text-shadow: 2px 2px 2px #000; 
-        a{
-            text-decoration: none;
-            &:visited{
-                color: $color-secundario;
-            }
-            &:link{
-                color: $color-secundario;
-            }
-        }
-    }       
-    .Header__nav{
-        img, input{
-            display: none;
-            visibility: hidden;
-        }
-        .Header__menu{
-            margin-right: 30px;
-            padding-left: 0;
-            li{
-                display: inline-block;
-                list-style: none;
-                font-size: 20px;
-                padding: 20px;
-                a{
-                    text-decoration: none;
-                    color:$color-secundario ;
-                    transition: padding 0.5s;
+    div{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        .Header__logo{
+            font-family: $fuente-logo;
+            font-size: 50px;
+            color: $color-secundario;
+            padding: 0 20px;
+            line-height: 1.2;
+            text-shadow: 2px 2px 2px #000; 
+            a{
+                text-decoration: none;
+                &:visited{
+                    color: $color-secundario;
                 }
-                a:hover{
-                    padding: 10px;
-                    text-decoration: underline;
-                    transform: scale(2);
+                &:link{
+                    color: $color-secundario;
+                }
+            }
+        }       
+        .Header__nav{
+            img, input{
+                display: none;
+                visibility: hidden;
+            }
+            .Header__menu{
+                margin-right: 30px;
+                padding-left: 0;
+                li{
+                    display: inline-block;
+                    list-style: none;
+                    font-size: 1rem;
+                    padding: 20px;
+                    a{
+                        text-decoration: none;
+                        color:$color-secundario ;
+                        transition: padding 0.5s;
+                    }
+                    a:hover{
+                        padding: 10px;
+                        text-decoration: underline;
+                        transform: scale(2);
+                    }
                 }
             }
         }
@@ -99,6 +102,8 @@ body{
     color: #fff;
     border-top: 5px solid $color-secundario;
     div{
+        max-width: 1200px;
+        margin: auto;
         .redes{
             p{
                 font-size: 2rem;   
